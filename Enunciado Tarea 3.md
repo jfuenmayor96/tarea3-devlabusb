@@ -17,8 +17,9 @@ Antes de empezar a realizar esta tarea debes completar una serie de pasos. Las r
  ### Preguntas
  
  1) ¿Qué es un sistema de control de versiones o VCS?
- 2) ¿Qué es Git? ¿Qué es Github?
- 3) Explica qué funcionalidad tienen los siguientes comandos de git. Si los comandos tienen flags, mencione alguna de ellas: 
+ 2) ¿Qué es un repositorio?
+ 3) ¿Qué es Git? ¿Qué es Github?
+ 4) Explica qué funcionalidad tienen los siguientes comandos de git. Si los comandos tienen flags, mencione alguna de ellas: 
   - `git init`
   - `git clone`
   - `git branch`
@@ -34,22 +35,22 @@ Antes de empezar a realizar esta tarea debes completar una serie de pasos. Las r
   - `git rebase`
   - `git remote`
  
- 4) En la terminología convencional de Git, ¿qué significa master? ¿qué significa origin?
- 5) ¿Cómo se inicializa un repositorio en Git?
- 6) ¿Cómo se clona un repositorio en Git?
- 7) ¿Qué es un *remote*? ¿Cómo se añade un nuevo *remote* a un repositorio?
- 8) ¿Qué es una rama? ¿Cómo se crea una rama en Git?
- 9) ¿Cómo subo al servidor remoto una rama que he creado localmente?
- 10) ¿Cómo descargo a mi repositorio local una rama que existe en el servidor remoto pero no tengo localmente? 
- 11) ¿Qué es un *pull*?
- 12) ¿Qué es un *push*?
- 13) ¿Qué es un merge? ¿Cómo se realiza?
- 14) ¿La operación de merge es conmutativa?
- 15) ¿Qué es un fork? 
- 16) ¿Qué es un pull request? 
- 17) ¿Qué es un commit? ¿Cómo se identifica un commit?
- 18) ¿Qué es un merge conflict?
- 19) ¿Qué es Git flow? 
+ 5) En la terminología convencional de Git, ¿qué significa master? ¿qué significa origin?
+ 6) ¿Cómo se inicializa un repositorio en Git?
+ 7) ¿Cómo se clona un repositorio en Git?
+ 8) ¿Qué es un *remote*? ¿Cómo se añade un nuevo *remote* a un repositorio?
+ 9) ¿Qué es una rama? ¿Cómo se crea una rama en Git?
+ 10) ¿Cómo subo al servidor remoto una rama que he creado localmente?
+ 11) ¿Cómo descargo a mi repositorio local una rama que existe en el servidor remoto pero no tengo localmente? 
+ 12) ¿Qué es un *pull*?
+ 13) ¿Qué es un *push*?
+ 14) ¿Qué es un merge? ¿Cómo se realiza?
+ 15) ¿La operación de merge es conmutativa?
+ 16) ¿Qué es un fork? 
+ 17) ¿Qué es un pull request? 
+ 18) ¿Qué es un commit? ¿Cómo se identifica un commit?
+ 19) ¿Qué es un merge conflict?
+ 20) ¿Qué es Git flow? 
  
  ### Formato de entrega
  
