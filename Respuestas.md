@@ -25,3 +25,24 @@ Github es una plataforma de desarrollo colaborativo de software para alojar proy
  - `git reflog`: Manejar la información del reflog. Utiliza los subcomandos show, expire, delete y exists. Show acepta todos los flags aceptados por `git log`, expire acepta, entre otros: --all, --expire, --expire-unreachable, --updateref, --rewrite, --stale-fix, --dry-run. Delete acepta --updateref, --rewrite, --dry-run.
  - -`git rebase`: reaplicar todos los commits de una rama en otra. Flags: --onto, --merge, --skip-
  - `git remote`Maneja un conjunto de repositorios rastreados. 
+
+**En la terminología convencional de Git, ¿qué significa master? ¿qué significa origin?**
+"Master" es el nombre de la rama que git crea por defecto cuando se crea un repositorio por primera vez. En la mayoría de los casos, master es la rama principal. 
+"Origin" es el nombre por defecto que git le da al repositorio remoto principal.
+
+**¿Cómo se inicializa un repositorio en Git?**
+Con el comando `git init`.
+
+**¿Cómo se clona un repositorio en Git?**
+Con el comando `git clone` seguido de la dirección del repositorio.
+
+**¿Qué es un remote? ¿Cómo se añade un nuevo remote a un repositorio?**
+Un remote en git es un marcador para un repositorio diferente al cual deseas hacer push o pull. Puede estar en la misma computadora en una carpeta diferente, o en un servidor remoto. Para añadir nuevos remote se utiliza el comando `git remote add` seguido del nombre remoto o una dirección URL.
+
+**¿Qué es una rama? ¿Cómo se crea una rama en Git?**
+Una rama es una versión alterna del proyecto. Efectivamente se trata de forks dentro del mismo repositorio. Las ramas tienen un commit predecesor y divergirán de dicho commit con los cambios que se le hagan. Se crean con el comando `git checkout -b` seguido del nombre de la nueva rama.
+
+**¿Cómo subo al servidor remoto una rama que he creado localmente?**
+Con el comando `git push -u origin` seguido del nombre de la rama local
+
+**
