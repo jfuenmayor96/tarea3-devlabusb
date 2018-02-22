@@ -45,4 +45,15 @@ Una rama es una versión alterna del proyecto. Efectivamente se trata de forks d
 **¿Cómo subo al servidor remoto una rama que he creado localmente?**
 Con el comando `git push -u origin` seguido del nombre de la rama local
 
-**
+**¿Cómo descargo a mi repositorio local una rama que existe en el servidor remoto pero no tengo localmente?**
+Con el comando `git fetch origin` seguido del nombre de la rama.
+
+**¿Qué es un pull?**
+`git pull` realiza un `git fetch` seguido de un `git merge`. Es decir, actualiza las ramas de seguimiento remoto y luego las combina con las ramas locales.
+
+**¿Qué es un push?**
+`git push` envía al repositorio remoto los cambios realizados en el repositorio local.
+
+**¿Qué es un merge?¿Cómo se realiza?**
+Un merge incorpora los cambios realizados sobre una rama (desde el momento en que divergieron) en la rama actual. Se realiza con el comando `git merge` seguido del nombre de la rama que se combinara con la rama actual.
+
