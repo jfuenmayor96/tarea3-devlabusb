@@ -57,3 +57,21 @@ Con el comando `git fetch origin` seguido del nombre de la rama.
 **¿Qué es un merge?¿Cómo se realiza?**
 Un merge incorpora los cambios realizados sobre una rama (desde el momento en que divergieron) en la rama actual. Se realiza con el comando `git merge` seguido del nombre de la rama que se combinara con la rama actual.
 
+**¿La operación de merge es conmutativa?**
+En cuanto al contenido de la rama resultante, puede ser conmutativa dependiendo de como se manejen los conflictos, sin embargo desde el punto de vista de la historia del proyecto no, no es conmutativa.
+
+**¿Qué es un fork?**
+Un fork es una copia exacta en crudo de un repositorio original. Es decir, después del fork, tendremos 2 repositorios exactamente iguales pero con distinta URL. Estos dos repositorios son completamente autónomos el uno del otro, los cambios que se efectúen en el original no se transmiten al fork ni viceversa. Se utiliza para poder contribuir con proyectos dentro de git sin haber sido designado como contribuidor, o para iniciar nuevos proyectos en base a proyectos ya existentes.
+
+**¿Qué es un pull request?**
+Un pull request es una petición que el propietario de un fork de un repositorio hace al propietario del repositorio original para que este último incorpore los commits que están en el fork.
+
+**¿Qué es un commit? ¿Cómo se identifica un commit?**
+Un commit es un registro que contiene todos los cambios realizados al proyecto hasta la creación del commit. 
+
+**¿Qué es un merge conflict?**
+Los merge conflict ocurren cuando al hacer merge, un mismo archivo presenta diferentes modificaciones en cada una de las ramas. Git es capaz de resolver estos problemas en la mayoría de los casos pero si, por ejemplo, en una rama se borra una línea mientras en la otra se modifica, git no sabe cuál version es la correcta, por lo que aparece un merge conflict.
+
+**¿Qué es Git flow?**
+Git Flow es un proceso para manejar cambios creado por Vincent Driessen y acompañado de extensiones de git para manejarlo.La idean general detrás de git flow es tener diferentes rama que siempre existen, cada una con un propósito diferente: master, develop, feature, release, y hotfix. El proceso de desarrollo de funcionalidades o el arreglo de bugs se desplaza de una rama a la otra hasta ser publicado.
+
