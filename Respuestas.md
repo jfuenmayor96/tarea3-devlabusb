@@ -50,3 +50,20 @@ Github es un servicio que permite trabajar bajo repositorios gestionados por el 
  	Una rama es un flujo nuevo diferente a la rama original, los cambios hechos es esta no afectan la rama principal ni otras ramas ya creadas.
 
  	Para generar un rama nueva se usa el comando git branch seguido del nombre de la nueva rama
+ 12) Pull
+   Se usa git pull para actualizar el repositorio local con los últimos cambios realizados en el repositorio remoto
+ 13) Push
+  Hacer push se refiere a subir cambios desde el repositorio local al repositorio remoto
+ 14) ¿Qué es un merge? ¿Cómo se realiza?
+  El merge incorpora cambios en la rama master, decir, fusiona una rama con la rama principal. 
+ 15) ¿La operación de merge es conmutativa?
+  
+ 16) Merge
+  Cuando se realiza un fork se genera un nuevo repositorio en tu cuenta de git con una nueva dirección y contiene los
+  mismos archivos que el repositorio sobre el que se ha aplicado el fork.
+ 17) ¿Qué es un pull request? 
+   Es un apetición realizada para que las actualizaciones que tiene un fork sean incorporadas al repositorio original.
+ 18) ¿Qué es un commit? ¿Cómo se identifica un commit?
+   Un commit identifica los cambios registrados en un archivo, los cuales son identificados con un serial único y su id apunta hacia sus padres.
+ 19) ¿Qué es un merge conflict?
+ 20) ¿Qué es Git flow? 
