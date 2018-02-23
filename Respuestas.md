@@ -94,3 +94,62 @@ El cual es un atajo de `git branch [nombre rama]` `git checkout [nombre rama]`
 **10. ¿Cómo subo al servidor remoto una rama que he creado localmente?**
 
 Mediante el comando `git push [nombre remoto] [nombre rama]`
+
+
+**11. ¿Cómo descargo a mi repositorio local una rama que existe en el servidor remoto pero no tengo localmente?**
+
+Mediante el comando `git fetch [remoto]`
+
+
+
+**12. ¿Qué es un pull?**
+
+Incorpora cambios de un repositorio remoto a la rama actual, mediante el comando `git pull`
+
+
+
+**13. ¿Qué es un push?**
+
+Actualiza referencias remotas utilizando refrencias locales, enviando objetos necesarios para completar las referencias dadas. Mediante el comando `git push`
+
+
+
+**14. ¿Qué es un merge? ¿Cómo se realiza?**
+
+Incorpora cambios desde los commits a una rama actual. Mediante el comando `git merge`
+
+
+
+**15. ¿La operación de merge es conmutativa?** No, pueden existir problemas de sobrescritura.
+
+
+
+**16. ¿Qué es un fork?**
+
+Al contribuir en un proyecto existente al que uno no tiene acceso para hacer push, uno puede hacer "fork" al proyecto, GitHub creará una copia del proyecto propia para uno, a este se le puede hacer push y todo tipo de operaciones. De esta manera, los proyectos no tiene que añadir a usuarios como colaboradores para darles acceso al push.
+
+
+
+**17. ¿Qué es un pull request?**
+
+Los demás usuarios pueden hacerle fork a un proyecto, pushearlo y contribuir sus cambios de vuelta al repositorio original mediante la creación de lo que se llama un Pull Request. Esto genera una solicitud a un proyecto para permitir que este haga pull a su árbol.
+
+
+
+**18. ¿Qué es un commit? ¿Cómo se identifica un commit?**
+
+Funciona para guardar cambios en el repositorio, para confirmar de manera instántanea esos cambios al repositorio cada vez que el proyecto alcance un estado que se desee grabar. Se realiza mediante el comando `git commit -m "mensaje"` 
+
+El identificador de un commit es un hash SHA-1 que contiene todo lo importante referente a un commmit como su contenido, fecha de commit, el nombre de quien realizó el commit y su dirección email, el mensaje log y el ID del commit previo.
+
+
+
+**19. ¿Qué es un merge conflict?**
+
+Ocurre por varios casos, cuando se edita una línea de archivo y al mismo tiempo se le hizo un cambio externo, o cuando un archivo es eliminado y otra persona intentaba editarlo. Cuando se realizan cambios y se solicitan `merge`, si el estado del archivo original cambia durante este proceso, ocurre un conflicto.
+
+
+
+**20. ¿Qué es Git flow?**
+
+Es un conjunto de extensiones de git que proveen operaciones de alto nivel sobre operaciones. Define un modelo estricto de ramas. Está basado en la idea de Git workflow. Dicta qué tipo de ramas se configuran y como fusionarlas juntas.
