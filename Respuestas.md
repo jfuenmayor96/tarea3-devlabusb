@@ -23,7 +23,7 @@ git init → crea un repositorio de git vacío o inicializa de nuevo uno existen
 git clone → clona un repositorio en un directorio nuevo. 
 git branch → lista, crea o elimina ramas de git. El flag -d elimina una rama.
 git checkout → cambio de ramas o recuperación de archivos de árboles de trabajo. -b crea una nueva rama.
-git commit → graba cambios al repositorio. -m se utiliza para especificar el mensaje del commit.
+git commit → registra cambios al repositorio. -m se utiliza para especificar el mensaje del commit.
 git reset → resetea el HEAD actual al estado especificado. --hard resetea el índice actual y el árbol de trabajo.
 git pull → recupera e integra desde otro repositorio o una rama local. -v para que la salida sea verbosa. También tiene unos flags asociados a los merges como --commit.
 git push → actualiza las referencias remotas a lo largo de los objetos asociados. --all hace push de todas las ramas.
@@ -46,3 +46,31 @@ A través del comando git clone <ruta_repositorio>
 
 8. ¿Qué es un remote? ¿Cómo se añade un nuevo remote a un repositorio?
 Un remote es una versión del proyecto que se encuentra alojada en Internet o en una red en alguna parte. Se pueden tener varias de estas, donde cada una generalmente puede ser de sólo lectura o de lectura y escritura. El manejo de remotes es esencial para la colaboración entre equipos de trabajo en proyectos.
+
+9. ¿Qué es una rama? ¿Cómo se crea una rama en Git?
+Dentro de un repositorio se tienen ramas las cuáles se pueden ver como “forks” dentro del mismo repositorio. Las ramas tendrán un commit ancestro en el repositorio y divergirán de ese commit con los cambios que se hagan en ella. Posteriormente, se pueden mezclar los cambios de las ramas. Las ramas permiten trabajar en varias características que no tienen que ver una con la otra a la vez. Con el comando git checkout -b <nombre_de_la_rama> se crea la rama y se cambia automáticamente a esta.
+
+10. ¿Cómo subo al servidor remoto una rama que he creado localmente?
+Si el remoto es origin, a través del comando git push -u origin <nombre_de_la_rama> se envía al servidor remoto la rama creada.
+
+11. ¿Cómo descargo a mi repositorio local una rama que existe en el servidor remoto pero no tengo localmente?
+A través del comando git fetch se obtienen todas las ramas que se han creado en el servidor remoto. Fetch no actualiza las ramas locales, si se desean actualizar estas se debe hacer pull de las ramas.
+
+12. ¿Qué es un pull?
+Incorpora cambios de un repositorio remoto en la rama actual. En su modo predeterminado, git pull es la abreviatura de git fetch seguido de git merge FETCH_HEAD.
+
+13. ¿Qué es un push?
+Cuando se hace un push, se están enviando al servidor remoto todos los commits que se tienen locales al momento de ejecutar el comando.
+
+14. ¿Qué es un merge? ¿Cómo se realiza?
+Merge se refiere a mezclado. Un merge ocurre cuando varias personas (dos o más) hicieron cambios sobre un mismo archivo. En ese caso, el sistema de control de versiones debe mezclar todos los cambios lo cual normalmente se hace por una estrategia recursiva, existen otros algoritmos de merge como el “Three way merge”, Fuzzy Patch application, Weave merge, entre otros. Puede ocurrir que dos personas hicieron cambios sobre un mismo segmento del archivo lo cual resulta en un merge conflict en el cual se incluyen mediante unas etiquetas las partes que resultaron en el conflicto y debe ser solucionado manualmente.
+
+15. ¿La operación de merge es conmutativa?
+Lo es para merges por defecto. Si dos ramas B y C son hijas de un ancestro en común A. Mezclar B en C debe producir el mismo resultado que mezclar C en B. Pero no se puede decir lo mismo en el caso de (B en C) en A contra B en (C en A). El merge
+
+16. ¿Qué es un fork?
+Un fork es una copia de un repositorio. El fork permite experimentar libremente realizando cambios sin afectar el proyecto original. 
+Comúnmente, los forks se utilizan para proponer cambios al proyecto de otra persona o para usar el proyecto de otra persona como punto de partida para su propia idea.
+
+17. ¿Qué es un pull request?
+Los pull request permiten informar a otros acerca de los cambios que se han enviado a un repositorio en GitHub. Una vez que se abre un pull request se puede analizar y discutir los posibles cambios con los colaboradores y agregar commits de seguimiento antes de que los cambios se mezclen en el repositorio (merge).
