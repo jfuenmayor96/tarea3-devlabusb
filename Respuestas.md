@@ -125,3 +125,13 @@ Utilizando el comando `git init`.
 
 ## 7) ¿Cómo se clona un repositorio en Git?
 Utilizando el comando `git clone <url o dirección ssh>`. Para usar SSH debes configurar una clave SSH, en caso contrario (y por defecto), se usa el protocolo HTTP.
+
+## 8) ¿Qué es un *remote*? ¿Cómo se añade un nuevo *remote* a un repositorio?
+Un remote una versión de tu proyecto que está hosteado en la internet o en alguna red.
+Para añadir un remote se usa el comando `git remo add <nombre del remmote> <url del remote>`.
+
+## 9) ¿Qué es una rama? ¿Cómo se crea una rama en Git?
+Una rama es como una lista enlazada de commits que recibe un nombre. Normalmente se crea para probar cambios en el repositorio sin afectar la rama **master**. Para crear una rama puedes utilizar `git checkout -b <nombre de la rama>`.
+
+## 10) ¿Cómo subo al servidor remoto una rama que he creado localmente?
+Con el comando `git push -u <nombre del remoto> <nombre que tendrá la rama en el remoto>`.
