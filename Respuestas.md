@@ -160,3 +160,9 @@ Es una petición que el propietario de una branch le da los "propietarios" de ot
 
 ## 18) ¿Qué es un commit? ¿Cómo se identifica un commit?
 Es el registro de unos cambios hechos en una versión del proyecto. Cada commit se identifica con un código de hash único.
+
+## 19) ¿Qué es un merge conflict?
+Recordando la pregunta **14**, un merge conflict es cuando ambas ramas modificaron la misma sección de algún archivo del repositorio, por lo cual el algoritmo no sabría (ni debería) escoger cual de las dos opciones tomar.
+
+## 20) ¿Qué es Git flow?
+Es un flujo de trabajo creado por Vincent Driessen que consiste en categorizar las ramas del repositorio en _Feature_, _Realease_ y _Hotfix_ branches. Además de tener ademas de **master** una rama llamada **develop** siendo esta la que recopila todos los cambios hechos por los desarrolladores.
