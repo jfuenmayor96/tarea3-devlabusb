@@ -74,3 +74,19 @@ Comúnmente, los forks se utilizan para proponer cambios al proyecto de otra per
 
 17. ¿Qué es un pull request?
 Los pull request permiten informar a otros acerca de los cambios que se han enviado a un repositorio en GitHub. Una vez que se abre un pull request se puede analizar y discutir los posibles cambios con los colaboradores y agregar commits de seguimiento antes de que los cambios se mezclen en el repositorio (merge).
+
+18. ¿Qué es un commit? ¿Cómo se identifica un commit?
+Un commit almacena el contenido actual del índice en un objeto commit junto con un mensaje de registro del usuario que describe los cambios. Un commit se identifica por un hash. Por ejemplo, según git log, el hash de mi último commit al momento de escribir esta pregunta fue bd190c4071f613ba4738c9e41800e8c075aa94fa
+
+19. ¿Qué es un merge conflict?
+Algunas veces git puede resolver diferencias entre ramas mezcladas. Por lo general, los cambios se realizan en diferentes líneas, o incluso en diferentes archivos, lo que hace que la fusión sea simple para que las computadoras entiendan esta. Sin embargo, a veces hay cambios competitivos en los que Git necesita ayuda para decidir qué cambios incorporar en la fusión final. A menudo, los conflictos de combinación ocurren cuando las personas hacen cambios diferentes en la misma línea del mismo archivo, o cuando una persona edita un archivo y otra persona elimina el mismo archivo. Debe resolver el conflicto antes de poder fusionar las ramas.
+
+20. ¿Qué es Git flow?
+Es un modelo creado por Vincent Driessen que ayuda a simplificar el desarrollo y la gestión de lanzamientos (releases). El modelo es útil en un flujo de trabajo de gestión de versiones para empresas. En este modelo un repositorio tiene dos ramas principales:
+Master, la cual es una rama altamente estable que siempre está lista para producción y contiene la última versión de lanzamiento del código fuente.
+Develop, que se deriva de la rama master. La rama de desarrollo sirve como una rama para integrar diferentes características planificadas para un lanzamiento que está por venir. Esta rama puede o no puede ser tan estable como la rama master. En esta rama, los desarroladores colaboran y mezclan las subramas con características.
+
+Además de estas dos ramas principales, existen otras ramas en el modelo de trabajo
+Feature, que se deriva de la rama develop y es utilizada para desarrollar características.
+Release, que también se deriva de develop pero es utilizada durante lanzamientos.
+Hotfix, esta se deriva de la rama master y es utilizada para resolver bugs en la rama de producción que fueron identificados después de un lanzamiento.
