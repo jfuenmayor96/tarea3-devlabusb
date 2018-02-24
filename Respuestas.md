@@ -119,3 +119,9 @@ Maneja el conjunto de repositorios seguidos.
 ##  5) En la terminología convencional de Git, ¿qué significa master? ¿qué significa origin?
 **master** es la rama principal del repositorio, la que es asignada para las versiones oficiales, listas para producción o las que unen todos los cambios realizados por todos los contribuyentes al proyecto.
 **origin** corresponde al nombre que se le da al repositorio remoto del cual se clonó o se subió el repositorio.
+
+## 6) ¿Cómo se inicializa un repositorio en Git?
+Utilizando el comando `git init`.
+
+## 7) ¿Cómo se clona un repositorio en Git?
+Utilizando el comando `git clone <url o dirección ssh>`. Para usar SSH debes configurar una clave SSH, en caso contrario (y por defecto), se usa el protocolo HTTP.
