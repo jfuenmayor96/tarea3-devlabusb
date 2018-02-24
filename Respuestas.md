@@ -148,3 +148,15 @@ Sube los commits al remoto.
 ## 14) ¿Qué es un merge? ¿Cómo se realiza?
 Un merge es el proceso de fusionar una rama con otra. Se realiza de la siguiente manera:
 _Encuentra un commit base adecuado, un ancestro común de ambas ramas. Luego revisa las diferencias de este con cada una de las ramas a fusionar. Aplica los cambios._
+
+## 15) ¿La operación de merge es conmutativa?
+Sí.
+
+## 16) ¿Qué es un fork?
+Es un repositorio nuevo idéntico a uno ya existente.
+
+## 17) ¿Qué es un pull request?
+Es una petición que el propietario de una branch le da los "propietarios" de otra rama (normalmente **master**) para revisar si se aplicarán los cambios de la branch o no.
+
+## 18) ¿Qué es un commit? ¿Cómo se identifica un commit?
+Es el registro de unos cambios hechos en una versión del proyecto. Cada commit se identifica con un código de hash único.
