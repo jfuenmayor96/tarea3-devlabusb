@@ -135,3 +135,16 @@ Una rama es como una lista enlazada de commits que recibe un nombre. Normalmente
 
 ## 10) ¿Cómo subo al servidor remoto una rama que he creado localmente?
 Con el comando `git push -u <nombre del remoto> <nombre que tendrá la rama en el remoto>`.
+
+## 11) ¿Cómo descargo a mi repositorio local una rama que existe en el servidor remoto pero no tengo localmente?
+Con el comando `git checkout -t <remoto>/<rama>` o con `git checkout -b <nombre de la rama local> <remoto>/<rama>`.
+
+## 12) ¿Qué es un *pull*?
+Es traer los cambios del remoto y aplicarles merge con nuestra rama.
+
+## 13) ¿Qué es un *push*?
+Sube los commits al remoto.
+
+## 14) ¿Qué es un merge? ¿Cómo se realiza?
+Un merge es el proceso de fusionar una rama con otra. Se realiza de la siguiente manera:
+_Encuentra un commit base adecuado, un ancestro común de ambas ramas. Luego revisa las diferencias de este con cada una de las ramas a fusionar. Aplica los cambios._
